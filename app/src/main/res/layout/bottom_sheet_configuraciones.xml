@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_botton_sheet">
+
+
+    <TextView
+        android:id="@+id/lblMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Menú de Opciones"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_configuracion"
+        android:text="Configuraciones de Usuario" />
+
+    <Button
+        android:id="@+id/btnNosotros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Sobre Nosotros"
+        android:drawableStart="@drawable/ic_nosotros"/>
+
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Cerrar Sesion"
+        android:drawableStart="@drawable/ic_cerrar_sesion"/>
+
+    <ImageView
+        android:id="@+id/logoEmpresa"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/logo" />
+
+</LinearLayout>

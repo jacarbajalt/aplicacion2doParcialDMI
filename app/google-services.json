@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "410244874654",
+    "firebase_url": "https://tesagas-1082b-default-rtdb.firebaseio.com",
+    "project_id": "tesagas-1082b",
+    "storage_bucket": "tesagas-1082b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410244874654:android:5054df1023c9d0b479968f",
+        "android_client_info": {
+          "package_name": "com.tesatechnology.techgas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410244874654-rlqnca059v0nmh00485ufdpa7fs6bnkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tesatechnology.techgas",
+            "certificate_hash": "b223de636890d0ffab9325f4c7547137d8f2fbe9"
+          }
+        },
+        {
+          "client_id": "410244874654-jo85udhhkgjbjcb7jj18iv43pfij8jcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNVX_YJGfD4aV5-GdyE4AV-ozLW2hKG7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410244874654-jo85udhhkgjbjcb7jj18iv43pfij8jcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

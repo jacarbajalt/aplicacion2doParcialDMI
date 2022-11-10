@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tesatechnology.techgas">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <queries>
+        <package android:name="com.facebook.katana" />
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Opciones"
+            android:exported="true" />
+        <activity
+            android:name=".RegistroLitro"
+            android:exported="true" />
+        <activity
+            android:name=".RegistroEfectivo"
+            android:exported="true" />
+        <activity
+            android:name="repartidores.CalificacionCliente"
+            android:exported="true" />
+        <activity
+            android:name="clientes.CalificacionRepartidor"
+            android:exported="true" />
+        <activity
+            android:name="repartidores.DetallesPedidoRep"
+            android:exported="true" />
+        <activity
+            android:name="clientes.DetallesPedidoUser"
+            android:exported="true" />
+
+        <receiver
+            android:name="receivers.AcceptReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name="receivers.CancelReceiver"
+            android:enabled="true" />
+
+        <service android:name="services.MyFirebaseMessagingClient">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="clientes.PantallaCarga" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="repartidores.PrincipalRep"
+            android:label="@string/title_activity_principal_rep" />
+        <activity
+            android:name=".Seleccion"
+            android:parentActivityName=".Seleccion" />
+        <activity android:name="repartidores.RegistroRep" />
+        <activity android:name=".Bienvenida" />
+        <activity android:name=".Nosotros" />
+        <activity android:name=".Actualizacion" />
+        <activity android:name=".Login" />
+        <activity android:name="clientes.Principal" />
+        <activity android:name="clientes.Registro" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/facebook_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

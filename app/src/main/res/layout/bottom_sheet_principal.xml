@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_botton_sheet">
+
+
+    <EditText
+        android:id="@+id/txtUbicacionActual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:hint="Tu ubicacion"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/lblPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Que servicio buscas?"
+        android:textColor="@android:color/black"
+        android:textSize="26sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdnCilindro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Rellenar Cilindro" />
+
+        <RadioButton
+            android:id="@+id/rdnEstacionario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Rellenar Estacionario" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtLitros"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="Litros: "
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:id="@+id/lblTarifa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="32dp"
+        android:padding="16dp"
+        android:text="Tarifa: $"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/lblMetodoPagos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Metodo de pago"
+        android:textColor="@android:color/black"
+        android:textSize="26sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdnEfectivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Efectivo" />
+
+        <RadioButton
+            android:id="@+id/rdnTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tarjeta de Credito/Debito" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSolicitarServicios"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_solicitar"
+        android:text="Solicitar Servicio" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/grpServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/rdnCilindroE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="Rellenar Cilindro" />
+
+        <RadioButton
+            android:id="@+id/rdnEstacionarioE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rellenar Estacionario" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/txtEfectivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="¿Cuanto Necesitas?"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/lblMetodoPagoE"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Metodo de pago"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/grpPago"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rdnEfectivoE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="Efectivo" />
+
+        <RadioButton
+            android:id="@+id/rdnTarjetaE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarjeta \nde Credito/Debito" />
+    </RadioGroup>
+
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnSolicitarServiciosE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:padding="15dp"
+        android:text="Solicitar Servicio" />
+
+</LinearLayout>
